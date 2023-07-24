@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lesson_6</string>
+    <string name="sign_in">\t\tВыполните вход \nили зарегистрируйтесь</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="enter">Вход</string>
+    <string name="enter_email">Введите вашу почту</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="bt_enter">Войти</string>
+    <string name="forget_password">Забыли пароль?</string>
+</resources>

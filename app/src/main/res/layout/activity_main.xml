@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/doors_dz_6"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/sign_in"
+        app:layout_constraintStart_toStartOf="@id/sign_in"
+        app:layout_constraintEnd_toEndOf="@id/sign_in"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        android:textSize="28sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/bt_enter"
+        app:layout_constraintStart_toStartOf="@id/bt_enter"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email"
+        android:textColorHint="@color/black2"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/sign_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="30dp"
+
+        android:background="@color/white2"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:textColorHint="@color/black2"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/enter_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="30dp"
+
+        android:background="@color/white2"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="28dp"
+        app:backgroundTint="@color/white3"
+        android:paddingVertical="13dp"
+        android:text="@string/bt_enter"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/enter_password"
+        tools:layout_editor_absoluteX="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
